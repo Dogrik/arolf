@@ -1,0 +1,11 @@
+---
+- hosts: test
+
+  tasks:
+    - name: Install arolf
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+        - unrar
+        - p7zip
